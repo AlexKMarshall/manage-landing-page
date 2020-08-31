@@ -5,9 +5,16 @@
   --very-dark-blue: hsl(233, 12%, 13%);
   --dark-grayish-blue: hsl(227, 12%, 61%);
   --very-pale-red: hsl(13, 100%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
 
   --horizontal-margin: 1.5rem;
   --narrow-margin: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  position: relative;
 }
 
 html,
@@ -113,7 +120,7 @@ body {
   padding-right: var(--horizontal-margin);
 }
 
-.features--headingtext {
+h2 {
   font-size: 2rem;
   line-height: 1.2em;
   font-weight: 700;
@@ -153,4 +160,37 @@ body {
   font-weight: 700;
   color: var(--very-pale-red);
   background-color: var(--bright-red);
+}
+
+.testimonials {
+  margin: 4.5rem var(--narrow-margin) 0;
+}
+
+.testimonials--list {
+  margin-top: 6rem;
+}
+
+.testimonial--card {
+  background-color: var(--very-light-gray);
+  padding: 4rem 1rem 2.75rem;
+}
+
+.testimonial--header {
+  text-align: center;
+}
+
+.testimonial--avatar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4.25rem;
+  height: 4.25rem;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.avatar--image {
+  width: 100%;
+  object-fit: cover;
 }
