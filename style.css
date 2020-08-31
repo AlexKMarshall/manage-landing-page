@@ -1,0 +1,55 @@
+html,
+body {
+  width: 100%;
+  position: relative;
+}
+
+body {
+  min-height: 100vh;
+  padding-top: 36px;
+}
+
+header {
+  margin: 0 24px 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.hero--image {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
+.background--container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.background {
+  width: 100%;
+  position: absolute;
+  top: -8%;
+  right: -22%;
+  z-index: -1;
+}
+
+.background--image {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
