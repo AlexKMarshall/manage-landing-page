@@ -86,10 +86,6 @@ header {
   color: var(--dark-grayish-blue);
 }
 
-a.button {
-  text-decoration: none;
-}
-
 .button {
   display: block;
   margin-top: 28px;
@@ -99,4 +95,5 @@ a.button {
   color: var(--very-pale-red);
   background-color: var(--bright-red);
   border-radius: 10rem;
+  box-shadow: 0 20px 30px -15px var(--bright-red);
 }
