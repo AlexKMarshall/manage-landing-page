@@ -163,7 +163,10 @@ h2 {
 }
 
 .testimonials {
-  margin: 4.5rem var(--narrow-margin) 0;
+  margin: 4.5rem var(--narrow-margin) 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .testimonials--list {
@@ -193,4 +196,16 @@ h2 {
 .avatar--image {
   width: 100%;
   object-fit: cover;
+}
+
+.testimonials--selector {
+  margin-top: 1.5rem;
+  margin-bottom: 2.75rem;
+}
+
+.selector--radio {
+  width: 28px;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
 }
