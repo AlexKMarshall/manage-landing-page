@@ -271,7 +271,9 @@ h2 {
 }
 
 .footer {
-  padding: 3.125rem var(--horizontal-margin) 0;
+  display: flex;
+  flex-direction: column;
+  padding: 3.125rem var(--horizontal-margin) 2rem;
   background-color: var(--very-dark-blue);
 }
 
@@ -300,8 +302,32 @@ h2 {
   row-gap: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;
+  margin-bottom: 3rem;
 }
 
 .footer--navlink {
   color: var(--very-light-gray);
+}
+
+.sociallinks {
+  margin: 0 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social--icon {
+  width: 2rem;
+  height: auto;
+}
+
+.footer--logo {
+  align-self: center;
+  margin-bottom: 3rem;
+}
+
+.copyright {
+  font-size: 0.75rem;
+  text-align: center;
+  color: var(--dark-grayish-blue);
 }
