@@ -204,8 +204,35 @@ h2 {
 }
 
 .selector--radio {
-  width: 28px;
+  position: absolute;
+  width: 0.75rem;
+  height: 0.75rem;
   margin: 0;
   padding: 0;
   opacity: 0;
+}
+
+.selector--label {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin: 0 0.1rem;
+}
+
+.selector--outline {
+  position: absolute;
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 2px solid var(--bright-red);
+  border-radius: 100%;
+}
+
+.selector--radio:checked ~ .selector--inside {
+  position: absolute;
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: var(--bright-red);
+  border-radius: 100%;
 }
