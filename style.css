@@ -278,6 +278,7 @@ h2 {
 .subscribe--form {
   display: flex;
   align-items: center;
+  margin-bottom: 3.75rem;
 }
 
 .subscribe--input {
@@ -289,4 +290,18 @@ h2 {
 
 .subscribe--button {
   font-size: 1rem;
+}
+
+.footer--navigation {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr auto;
+  grid-auto-flow: column;
+  row-gap: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.footer--navlink {
+  color: var(--very-light-gray);
 }
