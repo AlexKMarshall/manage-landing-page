@@ -245,6 +245,7 @@ h2 {
   padding-top: 6rem;
   margin-left: calc(-1 * var(--narrow-margin));
   margin-right: calc(-1 * var(--narrow-margin));
+  width: 100vw;
   display: flex;
   overflow-x: hidden;
 }
@@ -256,10 +257,11 @@ h2 {
   margin-right: -100%;
   opacity: 0;
   transform: translateX(-100%) scale(0.85);
+  transition: all 500ms ease-in-out;
 }
 
 .testimonials--listitem[data-active] ~ .testimonials--listitem {
-  transform: translateX(100%);
+  transform: translateX(100%) scale(0.85);
 }
 
 .testimonials--listitem[data-active] {

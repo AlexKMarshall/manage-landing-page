@@ -81,3 +81,34 @@ const elTestimonials = Array.from(
 let state = {
   photo: 0,
 };
+
+function send(event) {
+  const elActive = document.querySelector("[data-active]");
+
+  elActive.removeAttribute("data-active");
+
+  switch (event) {
+    case "PREV":
+      state.photo--;
+      break;
+    case "NEXT":
+      state.photo++;
+      break;
+    default:
+      if (isNaN(event)) break;
+      state.photo = +event;
+      break;
+  }
+
+  const len = elTestimonials.length;
+  state.photo = ((state.photo % len) + len) % len;
+
+  newElActive = document.querySelector(`[data-key="${state.photo}"]`);
+  newElActive.setAttribute("data-active", true);
+}
+
+send(0);
+
+setInterval(() => {
+  send("NEXT");
+}, 5000);
