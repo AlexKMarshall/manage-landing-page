@@ -242,7 +242,29 @@ h2 {
 }
 
 .testimonials--list {
-  margin-top: 6rem;
+  padding-top: 6rem;
+  margin-left: calc(-1 * var(--narrow-margin));
+  margin-right: calc(-1 * var(--narrow-margin));
+  display: flex;
+  overflow-x: hidden;
+}
+
+.testimonials--listitem {
+  padding-left: var(--narrow-margin);
+  padding-right: var(--narrow-margin);
+  width: 100%;
+  margin-right: -100%;
+  opacity: 0;
+  transform: translateX(-100%) scale(0.85);
+}
+
+.testimonials--listitem[data-active] ~ .testimonials--listitem {
+  transform: translateX(100%);
+}
+
+.testimonials--listitem[data-active] {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
 }
 
 .testimonial--card {

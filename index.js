@@ -72,3 +72,12 @@ function checkEmailValidity(inputField) {
     ? inputField.checkValidity()
     : /\S+@\S+\.\S+/.test(inputField.value);
 }
+
+// Testimonial Slider
+const elTestimonials = Array.from(
+  document.querySelectorAll(".testimonials--listitem")
+);
+
+let state = {
+  photo: 0,
+};
