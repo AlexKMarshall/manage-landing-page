@@ -113,11 +113,14 @@ function send(event) {
   });
 }
 
-send(0);
+let intervalID;
 
-setInterval(() => {
-  send("NEXT");
-}, 5000);
+function startInterval() {
+  clearInterval(intervalID);
+  intervalID = setInterval(() => {
+    send("NEXT");
+  }, 5000);
+}
 
 // Testimonial selector
 
@@ -126,5 +129,10 @@ Array.from(radios).forEach((radioButton) => {
   radioButton.addEventListener("click", (event) => {
     const key = event.target.getAttribute("data-key");
     send(key);
+    startInterval();
   });
 });
+
+send(0);
+
+startInterval();
