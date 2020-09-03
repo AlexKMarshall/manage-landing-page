@@ -83,9 +83,12 @@ let state = {
 };
 
 function send(event) {
-  const elActive = document.querySelector("[data-active]");
+  const elActives = document.querySelectorAll("[data-active]");
 
-  elActive.removeAttribute("data-active");
+  Array.from(elActives).forEach((el) => {
+    el.removeAttribute("data-active");
+    if (el.type === "radio") el.removeAttribute("checked");
+  });
 
   switch (event) {
     case "PREV":
@@ -103,8 +106,11 @@ function send(event) {
   const len = elTestimonials.length;
   state.photo = ((state.photo % len) + len) % len;
 
-  newElActive = document.querySelector(`[data-key="${state.photo}"]`);
-  newElActive.setAttribute("data-active", true);
+  newElActives = document.querySelectorAll(`[data-key="${state.photo}"]`);
+  Array.from(newElActives).forEach((el) => {
+    el.setAttribute("data-active", true);
+    if (el.type === "radio") el.setAttribute("checked", true);
+  });
 }
 
 send(0);

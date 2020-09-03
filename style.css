@@ -325,13 +325,19 @@ h2 {
   border-radius: 100%;
 }
 
-.selector--radio:checked ~ .selector--inside {
+.selector--inside {
   position: absolute;
   display: inline-block;
   width: 0.75rem;
   height: 0.75rem;
   background-color: var(--bright-red);
   border-radius: 100%;
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.selector--radio:checked ~ .selector--inside {
+  opacity: 1;
 }
 
 .simplify {
