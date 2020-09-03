@@ -3,6 +3,12 @@
 const menuToggle = document.getElementById("menu-toggle");
 const menu = document.getElementById("menu");
 const mobileNavOverlay = document.getElementById("mobilenav-overlay");
+const toCloseIconAnimation = document.getElementsByClassName(
+  "animate-to-close"
+);
+const toHamburgerIconAnimation = document.getElementsByClassName(
+  "animate-to-hamburger"
+);
 
 let isMenuOpen = false;
 
@@ -23,6 +29,10 @@ function openMobileNav() {
   menuToggle.setAttribute("aria-expanded", isMenuOpen);
   menu.classList.add("header--navigation-active");
   mobileNavOverlay.classList.add("mobilenav--overlay-active");
+
+  for (animation of toCloseIconAnimation) {
+    animation.beginElement();
+  }
 }
 
 function closeMobileNav() {
@@ -30,6 +40,10 @@ function closeMobileNav() {
   menuToggle.setAttribute("aria-expanded", isMenuOpen);
   menu.classList.remove("header--navigation-active");
   mobileNavOverlay.classList.remove("mobilenav--overlay-active");
+
+  for (animation of toHamburgerIconAnimation) {
+    animation.beginElement();
+  }
 }
 
 // Email subscription form handling

@@ -25,7 +25,69 @@
         aria-labelledby="menu-label"
         aria-expanded="false"
       >
-        <img src="images/icon-hamburger.svg" alt="menu toggle" />
+        <svg
+          width="25"
+          height="22"
+          viewBox="0 0 25 22"
+          fill="#242D52"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>Menu toggle</title>
+          <polygon points="0,2 25,2 25,6 0,6">
+            <animate
+              class="animate-to-close"
+              begin="indefinite"
+              fill="freeze"
+              attributeName="points"
+              dur="250ms"
+              to="5.08549,0.781185 22.745,18.4006 19.9588,21.247 2.259171,3.58746"
+            />
+            <animate
+              class="animate-to-hamburger"
+              begin="indefinite"
+              fill="freeze"
+              attributeName="points"
+              dur="250ms"
+              to="0,2 25,2 25,6 0,6"
+            />
+          </polygon>
+          <polygon points="0,9 25,9 25,13 0,13">
+            <animate
+              class="animate-to-close"
+              begin="indefinite"
+              fill="freeze"
+              attributeName="points"
+              dur="250ms"
+              to="13,11 13,11 13,11 13,11"
+            />
+            <animate
+              class="animate-to-hamburger"
+              begin="indefinite"
+              fill="freeze"
+              attributeName="points"
+              dur="250ms"
+              to="0,9 25,9 25,13 0,13"
+            />
+          </polygon>
+          <polygon points="0,16 25,16 25,20 0,20">
+            <animate
+              class="animate-to-close"
+              begin="indefinite"
+              fill="freeze"
+              attributeName="points"
+              dur="250ms"
+              to="2.255,18.4006 19.91451,0.781185 22.740829,3.58746 5.0412,21.247"
+            />
+            <animate
+              class="animate-to-hamburger"
+              begin="indefinite"
+              fill="freeze"
+              attributeName="points"
+              dur="250ms"
+              to="0,16 25,16 25,20 0,20"
+            />
+          </polygon>
+        </svg>
       </button>
       <nav class="header--navigation" aria-labelledby="menu-label" id="menu">
         <ul>
