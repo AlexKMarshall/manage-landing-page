@@ -11,6 +11,8 @@
 
   --horizontal-margin: 1.5rem;
   --narrow-margin: 1rem;
+
+  --popup-time: 250ms;
 }
 
 *,
@@ -64,17 +66,21 @@ body {
 
 .mobilenav--overlay {
   position: absolute;
-  display: none;
+  height: 0;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: black;
-  opacity: 60%;
+  opacity: 0;
+  transition: opacity var(--popup-time) ease-in-out,
+    height 0ms linear var(--popup-time);
 }
 
 .mobilenav--overlay-active {
-  display: block;
+  opacity: 60%;
+  height: 100%;
+  transition: opacity var(--popup-time) ease-in-out, height 0ms linear 0ms;
 }
 
 .hero {
