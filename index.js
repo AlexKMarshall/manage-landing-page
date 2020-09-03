@@ -118,3 +118,13 @@ send(0);
 setInterval(() => {
   send("NEXT");
 }, 5000);
+
+// Testimonial selector
+
+const radios = document.querySelectorAll(`[type="radio"]`);
+Array.from(radios).forEach((radioButton) => {
+  radioButton.addEventListener("click", (event) => {
+    const key = event.target.getAttribute("data-key");
+    send(key);
+  });
+});
