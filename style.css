@@ -42,7 +42,11 @@ body {
 }
 
 .site--header {
-  margin: 0 var(--horizontal-margin) 3rem;
+  margin-bottom: 3rem;
+}
+
+.header--content {
+  padding: 0 var(--horizontal-margin);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -56,7 +60,7 @@ body {
   padding: 1rem;
   border-radius: 0.25rem;
   background-color: var(--very-light-gray);
-  width: 100%;
+  width: calc(100% - 2 * var(--horizontal-margin));
   transform: scaleY(0);
   transform-origin: top;
   transition: transform 250ms ease-in-out 100ms;
@@ -82,6 +86,7 @@ body {
   display: block;
   font-weight: 700;
   text-align: center;
+  color: var(--very-dark-blue);
 }
 
 .mobilenav--overlay {
@@ -101,6 +106,10 @@ body {
   opacity: 60%;
   height: 100%;
   transition: opacity var(--popup-time) ease-in-out, height 0ms linear 0ms;
+}
+
+.site--header .button--cta {
+  display: none;
 }
 
 .hero {
@@ -348,13 +357,16 @@ h2 {
 }
 
 .simplify {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: var(--bright-red);
   background-image: url("images/bg-simplify-section-mobile.svg");
   background-repeat: no-repeat;
   background-position: left center;
+}
+
+.simplify--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 6rem var(--horizontal-margin) 5rem;
 }
 
@@ -458,6 +470,59 @@ h2 {
     --container-max-width: 1100px;
   }
 
+  /* Header section */
+  .menu-toggle {
+    display: none;
+  }
+
+  .site--header .button--cta {
+    display: inline-block;
+  }
+
+  .header--navigation {
+    position: relative;
+    top: unset;
+    padding: unset;
+    border-radius: unset;
+    background-color: unset;
+    width: unset;
+    transform: unset;
+    transform-origin: unset;
+    transition: unset;
+  }
+
+  .header--navigation * {
+    opacity: unset;
+    transition: unset;
+  }
+
+  .header--navigation ul {
+    display: flex;
+  }
+
+  .header--navlink {
+    margin: 0 1rem;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  /* Simplify section */
+  .simplify {
+    background-image: url("images/bg-simplify-section-desktop.svg");
+  }
+  .simplify--content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .simplify--headertext {
+    max-width: 20ch;
+    text-align: start;
+  }
+
+  /* Footer section */
   .footer--content {
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: 1fr auto;

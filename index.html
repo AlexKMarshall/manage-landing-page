@@ -15,89 +15,92 @@
   </head>
   <body>
     <header class="site--header">
-      <div class="logo">
-        <img src="images/logo.svg" alt="Manage logo" />
-      </div>
-      <span hidden id="menu-label">Main menu</span>
-      <button
-        class="menu-toggle"
-        id="menu-toggle"
-        aria-labelledby="menu-label"
-        aria-expanded="false"
-      >
-        <svg
-          width="25"
-          height="22"
-          viewBox="0 0 25 22"
-          fill="#242D52"
-          xmlns="http://www.w3.org/2000/svg"
+      <div class="container header--content">
+        <div class="logo">
+          <img src="images/logo.svg" alt="Manage logo" />
+        </div>
+        <span hidden id="menu-label">Main menu</span>
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-labelledby="menu-label"
+          aria-expanded="false"
         >
-          <title>Menu toggle</title>
-          <polygon points="0,2 25,2 25,6 0,6">
-            <animate
-              class="animate-to-close"
-              begin="indefinite"
-              fill="freeze"
-              attributeName="points"
-              dur="250ms"
-              to="5.08549,0.781185 22.745,18.4006 19.9588,21.247 2.259171,3.58746"
-            />
-            <animate
-              class="animate-to-hamburger"
-              begin="indefinite"
-              fill="freeze"
-              attributeName="points"
-              dur="250ms"
-              to="0,2 25,2 25,6 0,6"
-            />
-          </polygon>
-          <polygon points="0,9 25,9 25,13 0,13">
-            <animate
-              class="animate-to-close"
-              begin="indefinite"
-              fill="freeze"
-              attributeName="points"
-              dur="250ms"
-              to="13,11 13,11 13,11 13,11"
-            />
-            <animate
-              class="animate-to-hamburger"
-              begin="indefinite"
-              fill="freeze"
-              attributeName="points"
-              dur="250ms"
-              to="0,9 25,9 25,13 0,13"
-            />
-          </polygon>
-          <polygon points="0,16 25,16 25,20 0,20">
-            <animate
-              class="animate-to-close"
-              begin="indefinite"
-              fill="freeze"
-              attributeName="points"
-              dur="250ms"
-              to="2.255,18.4006 19.91451,0.781185 22.740829,3.58746 5.0412,21.247"
-            />
-            <animate
-              class="animate-to-hamburger"
-              begin="indefinite"
-              fill="freeze"
-              attributeName="points"
-              dur="250ms"
-              to="0,16 25,16 25,20 0,20"
-            />
-          </polygon>
-        </svg>
-      </button>
-      <nav class="header--navigation" aria-labelledby="menu-label" id="menu">
-        <ul>
-          <li class="header--navlink"><a href="#">Pricing</a></li>
-          <li class="header--navlink"><a href="#">Product</a></li>
-          <li class="header--navlink"><a href="#">About Us</a></li>
-          <li class="header--navlink"><a href="#">Careers</a></li>
-          <li class="header--navlink"><a href="#">Community</a></li>
-        </ul>
-      </nav>
+          <svg
+            width="25"
+            height="22"
+            viewBox="0 0 25 22"
+            fill="#242D52"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu toggle</title>
+            <polygon points="0,2 25,2 25,6 0,6">
+              <animate
+                class="animate-to-close"
+                begin="indefinite"
+                fill="freeze"
+                attributeName="points"
+                dur="250ms"
+                to="5.08549,0.781185 22.745,18.4006 19.9588,21.247 2.259171,3.58746"
+              />
+              <animate
+                class="animate-to-hamburger"
+                begin="indefinite"
+                fill="freeze"
+                attributeName="points"
+                dur="250ms"
+                to="0,2 25,2 25,6 0,6"
+              />
+            </polygon>
+            <polygon points="0,9 25,9 25,13 0,13">
+              <animate
+                class="animate-to-close"
+                begin="indefinite"
+                fill="freeze"
+                attributeName="points"
+                dur="250ms"
+                to="13,11 13,11 13,11 13,11"
+              />
+              <animate
+                class="animate-to-hamburger"
+                begin="indefinite"
+                fill="freeze"
+                attributeName="points"
+                dur="250ms"
+                to="0,9 25,9 25,13 0,13"
+              />
+            </polygon>
+            <polygon points="0,16 25,16 25,20 0,20">
+              <animate
+                class="animate-to-close"
+                begin="indefinite"
+                fill="freeze"
+                attributeName="points"
+                dur="250ms"
+                to="2.255,18.4006 19.91451,0.781185 22.740829,3.58746 5.0412,21.247"
+              />
+              <animate
+                class="animate-to-hamburger"
+                begin="indefinite"
+                fill="freeze"
+                attributeName="points"
+                dur="250ms"
+                to="0,16 25,16 25,20 0,20"
+              />
+            </polygon>
+          </svg>
+        </button>
+        <nav class="header--navigation" aria-labelledby="menu-label" id="menu">
+          <ul>
+            <li class="header--navlink"><a href="#">Pricing</a></li>
+            <li class="header--navlink"><a href="#">Product</a></li>
+            <li class="header--navlink"><a href="#">About Us</a></li>
+            <li class="header--navlink"><a href="#">Careers</a></li>
+            <li class="header--navlink"><a href="#">Community</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="button button--cta">Get Started</a>
+      </div>
     </header>
     <div class="background--container">
       <div class="background--positioning">
@@ -296,8 +299,12 @@
       <a href="#" class="button button--cta">Get Started</a>
     </section>
     <section class="simplify">
-      <h2 class="simplify--headertext">Simplify how your team works today.</h2>
-      <a href="#" class="button button--cta-inverse">Get Started</a>
+      <div class="container simplify--content">
+        <h2 class="simplify--headertext">
+          Simplify how your team works today.
+        </h2>
+        <a href="#" class="button button--cta-inverse">Get Started</a>
+      </div>
     </section>
     <footer class="footer">
       <div class="container footer--content">
