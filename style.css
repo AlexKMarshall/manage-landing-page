@@ -278,9 +278,12 @@ h2 {
 }
 
 .subscribe--form {
+  margin-bottom: 3.75rem;
+}
+
+.subscribe--inputrow {
   display: flex;
   align-items: center;
-  margin-bottom: 3.75rem;
 }
 
 .subscribe--input {
@@ -290,8 +293,23 @@ h2 {
   border-radius: 10rem;
 }
 
+.subscribe--input-error {
+  border: 3px solid var(--bright-red);
+}
+
 .subscribe--button {
   font-size: 1rem;
+}
+
+.subscribe--message {
+  position: absolute;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  color: var(--very-light-gray);
+}
+
+.subscribe--message-error {
+  color: var(--bright-red);
 }
 
 .footer--navigation {

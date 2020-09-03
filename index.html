@@ -175,15 +175,25 @@
       <a href="#" class="button button--cta-inverse">Get Started</a>
     </section>
     <footer class="footer">
-      <form action="POST" class="subscribe--form">
-        <input
-          type="email"
-          placeholder="Updates in your inbox..."
-          class="subscribe--input"
-        />
-        <button type="submit" class="button button--cta subscribe--button">
-          GO
-        </button>
+      <form
+        action="POST"
+        class="subscribe--form"
+        id="subscription-form"
+        novalidate
+      >
+        <div class="subscribe--inputrow">
+          <input
+            type="email"
+            placeholder="Updates in your inbox..."
+            class="subscribe--input"
+            id="email-input"
+            required
+          />
+          <button type="submit" class="button button--cta subscribe--button">
+            GO
+          </button>
+        </div>
+        <p class="subscribe--message" id="subscription-message"></p>
       </form>
       <nav class="footer--navigation">
         <a href="#" class="footer--navlink">Home</a>
@@ -236,5 +246,6 @@
       </div>
       <p class="copyright">Copyright 2020. All Rights Reserved</p>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
