@@ -219,36 +219,47 @@ h2 {
 }
 
 .features--feature {
-  margin: 3.125rem var(--narrow-margin) 0;
+  margin-top: 3.125rem;
+  margin-left: var(--narrow-margin);
+  display: grid;
+  grid-template-columns: auto 1fr var(--narrow-margin);
+  grid-template-rows: auto auto;
+  column-gap: 0.5rem;
 }
 
-.feature--header {
-  display: flex;
-  align-items: stretch;
+.feature--headerbg {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
   background-color: var(--very-pale-red);
-  padding: 0.75rem 0;
   border-top-left-radius: 5rem;
   border-bottom-left-radius: 5rem;
-  overflow: hidden;
-  margin-right: calc(-1 * var(--narrow-margin));
+  height: 100%;
 }
 
 .feature--headingtext {
   font-size: 1rem;
   font-weight: 700;
   color: var(--very-dark-blue);
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  align-self: center;
 }
 
 .feature--number {
   display: flex;
   align-items: center;
-  margin: -0.75rem 1rem -0.75rem 0;
-  padding-left: 1.625rem;
-  padding-right: 1.625rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 5rem;
   font-weight: 700;
   color: var(--very-pale-red);
   background-color: var(--bright-red);
+  grid-column: 1 / 2;
+  grid-row: 1 /2
+}
+
+.feature--copy {
+  grid-row: 2 / 3;
+  grid-column: 1 / 3;
 }
 
 .testimonials {
