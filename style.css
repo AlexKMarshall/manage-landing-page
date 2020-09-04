@@ -245,8 +245,7 @@ h2 {
   margin: -0.75rem 1rem -0.75rem 0;
   padding-left: 1.625rem;
   padding-right: 1.625rem;
-  border-top-right-radius: 5rem;
-  border-bottom-right-radius: 5rem;
+  border-radius: 5rem;
   font-weight: 700;
   color: var(--very-pale-red);
   background-color: var(--bright-red);
@@ -534,6 +533,38 @@ h2 {
 
   .headline--copy {
     max-width: 35ch;
+  }
+
+  /* Features section */
+
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .features > * {
+    margin: 0;
+  }
+
+  .features--feature:first-child {
+    margin-top: 0;
+  }
+
+  .features * {
+    text-align: start;
+  }
+
+  .features--headingtext {
+    font-size: 2.25rem;
+    max-width: 20ch;
+  }
+
+  .features--copy {
+    max-width: 35ch;
+  }
+
+  .feature--header {
+    background-color: unset;
   }
 
   /* Simplify section */
