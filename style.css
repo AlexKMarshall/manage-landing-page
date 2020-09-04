@@ -574,9 +574,18 @@ h2 {
     max-width: 35ch;
   }
 
-  .feature--header {
-    background-color: unset;
+  .features--feature {
+    column-gap: 1rem;
   }
+
+  .feature--headerbg {
+    display: none;
+  }
+
+  .feature--copy {
+    grid-column: 2 / 3;
+  }
+
 
   /* Simplify section */
   .simplify {
