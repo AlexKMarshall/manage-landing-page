@@ -2,6 +2,7 @@
 
 :root {
   --bright-red: hsl(12, 88%, 59%);
+  --light-red: hsl(12, 88%, 70%);
   --dark-blue: hsl(228, 39%, 23%);
   --bright-red-shadow: hsl(12, 88%, 49%);
   --very-dark-blue: hsl(233, 12%, 13%);
@@ -89,6 +90,11 @@ body {
   font-weight: 700;
   text-align: center;
   color: var(--very-dark-blue);
+}
+
+.header--navlink:hover, 
+.header--navlink:focus {
+  color: var(--dark-grayish-blue);
 }
 
 .mobilenav--overlay {
@@ -199,10 +205,20 @@ body {
   background-color: var(--bright-red);
 }
 
+.button--cta:hover, .button--cta:focus {
+  background-color: var(--light-red);
+}
+
 .button--cta-inverse {
   color: var(--bright-red);
   background-color: var(--very-pale-red);
   box-shadow: 0 20px 30px -15px var(--bright-red-shadow);
+}
+
+.button--cta-inverse:hover,
+.button--cta-inverse:focus {
+  background-color: var(--light-red);
+  color: var(--very-pale-red);
 }
 
 .features--header {
@@ -452,6 +468,10 @@ h2 {
 
 .footer--navlink {
   color: var(--very-light-gray);
+}
+
+.footer--navlink:hover, .footer--navlink:focus {
+  color: var(--bright-red);
 }
 
 .sociallinks {
