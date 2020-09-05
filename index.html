@@ -15,89 +15,92 @@
   </head>
   <body>
     <header class="site--header">
-      <div class="logo">
-        <img src="images/logo.svg" alt="Manage logo" />
-      </div>
-      <span hidden id="menu-label">Main menu</span>
-      <button
-        class="menu-toggle"
-        id="menu-toggle"
-        aria-labelledby="menu-label"
-        aria-expanded="false"
-      >
-        <svg
-          width="25"
-          height="22"
-          viewBox="0 0 25 22"
-          fill="#242D52"
-          xmlns="http://www.w3.org/2000/svg"
+      <div class="container header--content">
+        <div class="logo">
+          <img src="images/logo.svg" alt="Manage logo" />
+        </div>
+        <span hidden id="menu-label">Main menu</span>
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-labelledby="menu-label"
+          aria-expanded="false"
         >
-          <title>Menu toggle</title>
-          <polygon points="0,2 25,2 25,6 0,6">
-            <animate
-              class="animate-to-close"
-              begin="indefinite"
-              fill="freeze"
-              attributeName="points"
-              dur="250ms"
-              to="5.08549,0.781185 22.745,18.4006 19.9588,21.247 2.259171,3.58746"
-            />
-            <animate
-              class="animate-to-hamburger"
-              begin="indefinite"
-              fill="freeze"
-              attributeName="points"
-              dur="250ms"
-              to="0,2 25,2 25,6 0,6"
-            />
-          </polygon>
-          <polygon points="0,9 25,9 25,13 0,13">
-            <animate
-              class="animate-to-close"
-              begin="indefinite"
-              fill="freeze"
-              attributeName="points"
-              dur="250ms"
-              to="13,11 13,11 13,11 13,11"
-            />
-            <animate
-              class="animate-to-hamburger"
-              begin="indefinite"
-              fill="freeze"
-              attributeName="points"
-              dur="250ms"
-              to="0,9 25,9 25,13 0,13"
-            />
-          </polygon>
-          <polygon points="0,16 25,16 25,20 0,20">
-            <animate
-              class="animate-to-close"
-              begin="indefinite"
-              fill="freeze"
-              attributeName="points"
-              dur="250ms"
-              to="2.255,18.4006 19.91451,0.781185 22.740829,3.58746 5.0412,21.247"
-            />
-            <animate
-              class="animate-to-hamburger"
-              begin="indefinite"
-              fill="freeze"
-              attributeName="points"
-              dur="250ms"
-              to="0,16 25,16 25,20 0,20"
-            />
-          </polygon>
-        </svg>
-      </button>
-      <nav class="header--navigation" aria-labelledby="menu-label" id="menu">
-        <ul>
-          <li class="header--navlink"><a href="#">Pricing</a></li>
-          <li class="header--navlink"><a href="#">Product</a></li>
-          <li class="header--navlink"><a href="#">About Us</a></li>
-          <li class="header--navlink"><a href="#">Careers</a></li>
-          <li class="header--navlink"><a href="#">Community</a></li>
-        </ul>
-      </nav>
+          <svg
+            width="25"
+            height="22"
+            viewBox="0 0 25 22"
+            fill="#242D52"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu toggle</title>
+            <polygon points="0,2 25,2 25,6 0,6">
+              <animate
+                class="animate-to-close"
+                begin="indefinite"
+                fill="freeze"
+                attributeName="points"
+                dur="250ms"
+                to="5.08549,0.781185 22.745,18.4006 19.9588,21.247 2.259171,3.58746"
+              />
+              <animate
+                class="animate-to-hamburger"
+                begin="indefinite"
+                fill="freeze"
+                attributeName="points"
+                dur="250ms"
+                to="0,2 25,2 25,6 0,6"
+              />
+            </polygon>
+            <polygon points="0,9 25,9 25,13 0,13">
+              <animate
+                class="animate-to-close"
+                begin="indefinite"
+                fill="freeze"
+                attributeName="points"
+                dur="250ms"
+                to="13,11 13,11 13,11 13,11"
+              />
+              <animate
+                class="animate-to-hamburger"
+                begin="indefinite"
+                fill="freeze"
+                attributeName="points"
+                dur="250ms"
+                to="0,9 25,9 25,13 0,13"
+              />
+            </polygon>
+            <polygon points="0,16 25,16 25,20 0,20">
+              <animate
+                class="animate-to-close"
+                begin="indefinite"
+                fill="freeze"
+                attributeName="points"
+                dur="250ms"
+                to="2.255,18.4006 19.91451,0.781185 22.740829,3.58746 5.0412,21.247"
+              />
+              <animate
+                class="animate-to-hamburger"
+                begin="indefinite"
+                fill="freeze"
+                attributeName="points"
+                dur="250ms"
+                to="0,16 25,16 25,20 0,20"
+              />
+            </polygon>
+          </svg>
+        </button>
+        <nav class="header--navigation" aria-labelledby="menu-label" id="menu">
+          <ul>
+            <li class="header--navlink"><a href="#">Pricing</a></li>
+            <li class="header--navlink"><a href="#">Product</a></li>
+            <li class="header--navlink"><a href="#">About Us</a></li>
+            <li class="header--navlink"><a href="#">Careers</a></li>
+            <li class="header--navlink"><a href="#">Community</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="button button--cta">Get Started</a>
+      </div>
     </header>
     <div class="background--container">
       <div class="background--positioning">
@@ -108,27 +111,29 @@
         />
       </div>
     </div>
-    <div class="hero">
-      <img
-        class="hero--image"
-        src="images/illustration-intro.svg"
-        alt="example graphs"
-      />
+    <div class="container hero--content">
+      <div class="hero">
+        <img
+          class="hero--image"
+          src="images/illustration-intro.svg"
+          alt="example graphs"
+        />
+      </div>
+      <section class="headline">
+        <h1 class="headline--header">
+          Bring everyone together to build better products.
+        </h1>
+        <p class="copy headline--copy copy-centered">
+          Manage makes it simple for software teams to plan day-to-day tasks while
+          keeping the larger team goals in view.
+        </p>
+        <a href="#" class="button button--cta">Get Started</a>
+      </section>
     </div>
-    <section class="headline">
-      <h1 class="headline--header">
-        Bring everyone together to build better products.
-      </h1>
-      <p class="copy headline--copy copy-centered">
-        Manage makes it simple for software teams to plan day-to-day tasks while
-        keeping the larger team goals in view.
-      </p>
-      <a href="#" class="button button--cta">Get Started</a>
-    </section>
-    <section class="features">
+    <section class="container features">
       <header class="features--header">
         <h2 class="features--headingtext">What’s different about Manage?</h2>
-        <p class="copy copy-centered">
+        <p class="copy features--copy copy-centered">
           Manage provides all the functionality your team needs, without the
           complexity. Our software is tailor-made for modern digital product
           teams.
@@ -136,35 +141,34 @@
       </header>
       <ol class="features--list">
         <li class="features--feature">
-          <header class="feature--header">
-            <span class="feature--number">01</span>
-            <h3 class="feature--headingtext">Track company-wide progress</h3>
-          </header>
-          <p class="copy">
+          <div class="feature--headerbg"></div>
+          <div class="feature--number">01</div>
+          <h3 class="feature--headingtext">Track company-wide progress</h3>
+          <p class="copy feature--copy">
             See how your day-to-day tasks fit into the wider vision. Go from
             tracking progress at the milestone level all the way done to the
             smallest of details. Never lose sight of the bigger picture again.
           </p>
         </li>
         <li class="features--feature">
-          <header class="feature--header">
+          <div class="feature--headerbg"></div>
+
             <span class="feature--number">02</span>
             <h3 class="feature--headingtext">Advanced built-in reports</h3>
-          </header>
-          <p class="copy">
+          <p class="copy feature--copy">
             Set internal delivery estimates and track progress toward company
             goals. Our customisable dashboard helps you build out the reports
             you need to keep key stakeholders informed.
           </p>
         </li>
         <li class="features--feature">
-          <header class="feature--header">
+          <div class="feature--headerbg"></div>
+
             <span class="feature--number">03</span>
             <h3 class="feature--headingtext">
               Everything you need in one place
             </h3>
-          </header>
-          <p class="copy">
+          <p class="copy feature--copy">
             Stop jumping from one service to another to communicate, store
             files, track tasks and share documents. Manage offers an all-in-one
             team productivity solution.
@@ -209,7 +213,7 @@
             </p>
           </div>
         </li>
-        <li class="testimonials--listitem" data-active data-key="2">
+        <li class="testimonials--listitem" data-key="2">
           <div class="testimonial--card">
             <div class="testimonial--avatar">
               <img
@@ -296,80 +300,86 @@
       <a href="#" class="button button--cta">Get Started</a>
     </section>
     <section class="simplify">
-      <h2 class="simplify--headertext">Simplify how your team works today.</h2>
-      <a href="#" class="button button--cta-inverse">Get Started</a>
+      <div class="container simplify--content">
+        <h2 class="simplify--headertext">
+          Simplify how your team works today.
+        </h2>
+        <a href="#" class="button button--cta-inverse">Get Started</a>
+      </div>
     </section>
     <footer class="footer">
-      <form
-        action="POST"
-        class="subscribe--form"
-        id="subscription-form"
-        novalidate
-      >
-        <div class="subscribe--inputrow">
-          <input
-            type="email"
-            placeholder="Updates in your inbox..."
-            class="subscribe--input"
-            id="email-input"
-            required
-          />
-          <button type="submit" class="button button--cta subscribe--button">
-            GO
-          </button>
+      <div class="container footer--content">
+        <form
+          action="POST"
+          class="subscribe--form"
+          id="subscription-form"
+          novalidate
+        >
+          <div class="subscribe--inputrow">
+            <input
+              type="email"
+              placeholder="Updates in your inbox..."
+              class="subscribe--input"
+              id="email-input"
+              required
+            />
+            <button type="submit" class="button button--cta subscribe--button">
+              GO
+            </button>
+          </div>
+          <p class="subscribe--message" id="subscription-message"></p>
+        </form>
+        <nav class="footer--navigation">
+          <a href="#" class="footer--navlink">Home</a>
+          <a href="#" class="footer--navlink">Pricing</a>
+          <a href="#" class="footer--navlink">Products</a>
+          <a href="#" class="footer--navlink">About Us</a>
+          <a href="#" class="footer--navlink">Careers</a>
+          <a href="#" class="footer--navlink">Community</a>
+          <a href="#" class="footer--navlink">Privacy Policy</a>
+        </nav>
+        <div class="sociallinks">
+          <a href="#">
+            <img
+              src="images/icon-facebook.svg"
+              alt="Facebook link"
+              class="social--icon"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="images/icon-youtube.svg"
+              alt="Youtube link"
+              class="social--icon"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="images/icon-twitter.svg"
+              alt="Twitter link"
+              class="social--icon"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="images/icon-pinterest.svg"
+              alt="Pinterest link"
+              class="social--icon"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="images/icon-instagram.svg"
+              alt="Instagram link"
+              class="social--icon"
+            />
+          </a>
         </div>
-        <p class="subscribe--message" id="subscription-message"></p>
-      </form>
-      <nav class="footer--navigation">
-        <a href="#" class="footer--navlink">Home</a>
-        <a href="#" class="footer--navlink">Pricing</a>
-        <a href="#" class="footer--navlink">Products</a>
-        <a href="#" class="footer--navlink">About Us</a>
-        <a href="#" class="footer--navlink">Careers</a>
-        <a href="#" class="footer--navlink">Community</a>
-        <a href="#" class="footer--navlink">Privacy Policy</a>
-      </nav>
-      <div class="sociallinks">
-        <a href="#">
-          <img
-            src="images/icon-facebook.svg"
-            alt="Facebook link"
-            class="social--icon"
-          />
-        </a>
-        <a href="#">
-          <img
-            src="images/icon-youtube.svg"
-            alt="Youtube link"
-            class="social--icon"
-          />
-        </a>
-        <a href="#">
-          <img
-            src="images/icon-twitter.svg"
-            alt="Twitter link"
-            class="social--icon"
-          />
-        </a>
-        <a href="#">
-          <img
-            src="images/icon-pinterest.svg"
-            alt="Pinterest link"
-            class="social--icon"
-          />
-        </a>
-        <a href="#">
-          <img
-            src="images/icon-instagram.svg"
-            alt="Instagram link"
-            class="social--icon"
-          />
-        </a>
+        <div class="footer--logo">
+          <img src="images/logo-white.svg" alt="Manage logo" />
+        </div>
+        <p class="copyright">Copyright 2020. All Rights Reserved</p>
       </div>
-      <div class="footer--logo">
-        <img src="images/logo-white.svg" alt="Manage logo" />
-      </div>
-      <p class="copyright">Copyright 2020. All Rights Reserved</p>
     </footer>
     <div class="mobilenav--overlay" id="mobilenav-overlay"></div>
     <script src="index.js"></script>
