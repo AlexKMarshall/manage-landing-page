@@ -132,30 +132,30 @@ body {
   object-fit: scale-down;
 }
 
-.background--container {
+.background--image {
   width: 100%;
-  height: 100%;
+  max-width: 500px;
   position: absolute;
-  overflow: hidden;
+}
+
+.pattern1 {
+  top:-5rem;
+  right: -5rem;
+}
+
+.pattern2 {
+  top: 25rem;
+  right: -12rem;
+  transform: scale(0.8);
+}
+
+.background--container {
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  pointer-events: none;
-}
-
-.background--positioning {
-  width: 100%;
-  position: absolute;
-  top: -5rem;
-  right: -5rem;
-  z-index: -1;
-}
-
-.background--image {
-  width: 100%;
-  height: 100%;
-  object-fit: scale-down;
+  overflow: hidden;
 }
 
 .headline {
@@ -163,10 +163,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0 var(--horizontal-margin) 6rem;
-  background-image: url("images/bg-tablet-pattern.svg");
-  background-size: 75%;
-  background-repeat: no-repeat;
-  background-position: right -150% bottom 15%;
 }
 
 .headline--header {
@@ -500,6 +496,15 @@ h2 {
 @media screen and (min-width: 900px) {
   :root {
     --container-max-width: 1100px;
+  }
+
+  /* Background pattern */
+
+  .pattern2 {
+    right: unset;
+    top: 45rem;
+    left: -12rem;
+    transform: scale(1.2);
   }
 
   /* Header section */
