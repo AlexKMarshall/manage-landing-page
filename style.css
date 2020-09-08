@@ -622,16 +622,14 @@ h2 {
   }
 
   .testimonials--list > * + * {
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
 
   .testimonials--listitem {
-    /* flex-basis: 40%; */
     flex-shrink: 0;
     width: 40%;
     padding-left: unset;
     padding-right: unset;
-    /* width: unset; */
     margin-right: unset;
     opacity: unset;
     transform: unset;
