@@ -611,6 +611,46 @@ h2 {
     grid-column: 2 / 3;
   }
 
+  .testimonials--list {
+    padding-top: 6rem;
+    margin-bottom: 4rem;
+    margin-left: unset;
+    margin-right: unset;
+    width: unset;
+    overflow: auto;
+    display: flex;
+  }
+
+  .testimonials--list > * + * {
+    margin-left: 1rem;
+  }
+
+  .testimonials--listitem {
+    /* flex-basis: 40%; */
+    flex-shrink: 0;
+    width: 40%;
+    padding-left: unset;
+    padding-right: unset;
+    /* width: unset; */
+    margin-right: unset;
+    opacity: unset;
+    transform: unset;
+    transition: unset;
+  }
+  
+  .testimonials--listitem[data-active] ~ .testimonials--listitem {
+    transform: unset;
+  }
+  
+  .testimonials--listitem[data-active] {
+    opacity: unset;
+    transform: unset;
+  }
+
+  .testimonials--selector {
+    display: none;
+  }
+
 
   /* Simplify section */
   .simplify {
